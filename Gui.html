@@ -1,0 +1,111 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="har..ico" type="image/x-icon">
+     <title>Gui</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+    <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="Gui.html">Gui</a></li>
+        <li><a href="videos.html">Video Tutorial</a></li>
+        <li><a href="Compiler.html">Online Compiler </a></li>
+        <li><a href="basin.html">Webistes with Python Django</a></li>
+        <li><a href="imptopics.html">Important topics of Python</a></li>
+        <li><a href="code.html">Some Basic Codes</a></li>
+        <li style="float:left"><a class="active" href="About.html">About</a></li>
+      </ul>
+    <div id="gui">
+        <h2>CALCULATOR GUI(GRAPHICAL USER INTERFACE) USING PYTHON</h2>
+        <h3 id="code"> Source code</h3>
+        <p id="calci"> 
+            from tkinter import * <br>
+root = Tk() <br>
+root.geometry("260x200") <br>
+root.title("Simple Calculator") <br>
+root.configure(background="gray") <br>
+root.minsize(250, 150) <br>
+root.maxsize(250, 150) <br>
+x = "" <br>
+def press(num): <br>
+    global x <br>
+    x = x + str(num) <br>
+    a.set(x) <br>
+def equal(): <br>
+    try: <br>
+        global x <br>
+        total = str(eval(x)) <br>
+        a.set(total) <br>
+
+        x = "" <br>
+    except: <br>
+        a.set("error") <br>
+        x = "" <br>
+def clear(): <br>
+    global x <br>
+    x ="" <br>
+    a.set("") <br>
+
+a = StringVar() <br>
+b = Entry(root, textvar=a) <br>
+b.grid(columnspan=4, ipadx=70)<br>
+Button1 = Button(root, text="1", bg='black', fg='green', height=1, width=5, command=lambda: press(1)) <br>
+Button1.grid(row=2, column=0)<br>
+Button2 = Button(root, text="2", bg='black', fg='green', height=1, width=5, command=lambda: press(2)) <br>
+Button2.grid(row=2, column=1)<br>
+Button3 = Button(root, text="3", bg='black', fg='green', height=1, width=5, command=lambda: press(3)) <br>
+Button3.grid(row=2, column=2)<br>
+Button4 = Button(root, text="4", bg='black', fg='green', height=1, width=5, command=lambda: press(4)) <br> 
+Button4.grid(row=3, column=0)<br>
+Button5 = Button(root, text="5", bg='black', fg='green', height=1, width=5, command=lambda: press(5)) <br>
+Button5.grid(row=3, column=1)
+Button6 = Button(root, text="6", bg='black', fg='green', height=1, width=5, command=lambda: press(6)) <br>
+Button6.grid(row=3, column=2)<br>
+Button7 = Button(root, text="7", bg='black', fg='green', height=1, width=5, command=lambda: press(7)) <br>
+Button7.grid(row=4, column=0)<br>
+Button0 = Button(root, text="8", bg='black', fg='green', height=1, width=5, command=lambda: press(8)) <br>
+Button0.grid(row=4, column=1)<br>
+Button8 = Button(root, text="9", bg='black', fg='green', height=1, width=5, command=lambda: press(9)) <br>
+Button8.grid(row=4, column=2)<br>
+Button9 = Button(root, text="0", bg='black', fg='green', height=1, width=5, command=lambda: press(0)) <br>
+Button9.grid(row=5, column=1)<br>
+Button10 = Button(root, text="+", bg='black', fg='green', height=1, width=5, command=lambda: press("+")) <br>
+Button10.grid(row=2, column=3)<br>
+Button11 = Button(root, text="-", bg='black', fg='green', height=1, width=5, command=lambda: press("-")) <br>
+Button11.grid(row=3, column=3)<br>
+Button12 = Button(root, text="*", bg='black', fg='green', height=1, width=5, command=lambda: press("*"))  <br>
+Button12.grid(row=4, column=3)<br>
+Button13 = Button(root, text="=", bg='black', fg='green', height=1, width=5, command=equal)<br>
+Button13.grid(row=5, column=2)<br>
+Button14 = Button(root, text="/", bg='black', fg='green', height=1, width=5, command=lambda: press("/"))<br>
+Button14.grid(row=5, column=3)<br>
+Button15 = Button(root, text=".", bg='black', fg='green', height=1, width=5, command=lambda: press("."))<br>
+Button15.grid(row=5, column=0)<br>
+Button16 = Button(root, text="clear", bg='black', fg='green', height=1, width=5, command=clear)<br>
+Button16.grid(row=7, columnspan=4)<br>
+root.mainloop()<br>
+        </p>
+        <div>
+        
+            <h2>What we have used in this code?</h2>
+            <p>
+                <ol id="use" type="I">
+                    <li>Python Module Known as Tkinter</li> <br>
+                    <li>We have used Execption handling in this calculator</li> <br>
+                    <li>We have used Global Variable</li> <br>
+                    <li>We have used grid to pack the Numbers according to row and column</li> <br>
+                    <li>We have used functions</li> <br>
+                </ol>
+            </p>
+        </div>
+        </div>
+        <div style="margin-left: 150px;">
+            <h3 id="how" style="text-align: center;">How our gui looks like</h3>
+            <img src="calculator.PNG" alt="Image is not available" id="calculator" height="350px" width="400px">
+        </div>
+ </body>
+ </html>

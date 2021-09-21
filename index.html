@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Era</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="har..ico" type="image/x-icon">     
+
+</head>
+<body>
+    
+      
+    <ul id="om">
+        <li><a href="index.html" class="b">home</a></li>
+        <li><a href="Gui.html" class="b">Gui</a></li>
+        <li><a href="videos.html" class="b">Video Tutorial</a></li>
+        <li><a href="Compiler.html" class="b">Online Compiler </a></li>
+        <li><a href="basin.html" class="b">Webistes with Python Django</a></li>
+        <li><a href="imptopics.html" class="b">Important topics of Python</a></li>
+        <li><a href="code.html" class="b">Some Basic Codes</a></li>
+
+        <li style="float:left"><a class="active" href="About.html">About</a></li>
+      </ul>
+    <div id="body1">
+       
+    <div id="img">
+        <img src="whypython.jpg" alt="Image is not available" width="100%">
+    </div>
+    <div id="dev">
+        <h2 id="k1">Who is the creator of the Python language?</h2>
+        <h3>Guido van Rossum</h3>
+
+    </div>
+    <div id="li" ><h2 id="k2">Some Images Of Sir Guido van Rossum</h2></div>
+    <div class="slidercontainer">  
+        <div class="showSlide fade">  
+            <img src="creator.jpg"  />  
+            <div class="content"></div>  
+        </div>  
+        <div class="showSlide fade" >  
+            <img src="cr2.jpg" height="700px"/>  
+            <div class="content"></div>  
+        </div>  
+    
+        <div class="showSlide fade">  
+            <img src="cr3.jpg" height="700px" />  
+            <div class="content"></div>  
+        </div>  
+        <div class="showSlide fade">  
+            <img src="cr4.jpg" />
+            <div class="content"></div>  
+        </div>  
+         
+        <a class="left" onclick="nextSlide(-1)">❮</a>  
+        <a class="right" onclick="nextSlide(1)">❯</a>  
+    </div>  
+    <!-------javascript-->
+    <script type="text/javascript">  
+        var slide_index = 1;  
+        displaySlides(slide_index);  
+    
+        function nextSlide(n) {  
+            displaySlides(slide_index += n);  
+        }  
+    
+        function currentSlide(n) {  
+            displaySlides(slide_index = n);  
+        }  
+    
+        function displaySlides(n) {  
+            var i;  
+            var slides = document.getElementsByClassName("showSlide");  
+            if (n > slides.length) { slide_index = 1 }  
+            if (n < 1) { slide_index = slides.length }  
+            for (i = 0; i < slides.length; i++) {  
+                slides[i].style.display = "none";  
+            }  
+            slides[slide_index - 1].style.display = "block";  
+        }  
+    </script>
+    <div id="owner">
+        <h2 id="k3">Who is the owner of python</h2>
+        <p>The intellectual property rights behind Python are owned by the Python Software Foundation. Python is currently distributed under the PSF License Agreement (a GPL compatible license), which means it is completely free to use, share and modify it.</p>
+
+    </div>
+    <div id="directly">
+        <h2 id="k4">You Can Direclty Go To This Topics</h2>
+        
+             <p class="dir"><a href="#h2" style="color: white;">Why Python is So Famous </a> </p>
+             <p class="dir"><a href="#imp" style="color: white;">Importance of Learning Python Programming</a></p>
+             <p class="dir"><a href="#ad" style="color: white;">Advantages of Python</a></p>
+        
+        
+    </div>
+    
+    <div id="h1"> <h2 id="k5">What is Python?</h2>
+    <p>What is Python exactly? Python is one of the most popular programming languages that can be widely used for a variety of applications. Also, it is a general-purpose coding language that includes high-level data structures, dynamic binding, dynamic typing, and much more.
+
+        Despite these, Python is one of the beginner-friendly programming languages. It serves as a gateway to the coding world.</p>
+    
+    
+    </div>
+    
+    <div id="h2"><h2 id="k6">Why Python is So Famous?</h2>
+        <ol>
+            <li>Easy to learn and code</li>
+            <p>Consistently, Python is ranking as one of the easiest programming languages to learn. This is due to its high reliability and simple syntax which is quite similar to plain text. So, you can write a Python code simply and execute it much faster than the other programming languages. Even, one can change the code base of Python for the quick experiment as it is an interpreted language. Due to the ease of use, Python is even more popular among all kinds of developers.</p>
+            <li> Amazing Libraries and Frameworks</li>
+                
+                <p>When you work on bigger projects, libraries can help to cut down the initial development cycle and save time. Due to a supportive community and corporate sponsorship, Python has an excellent selection of libraries from SciPy to Django for web development. Furthermore, few libraries include some specific focus like nltk for natural language processing and scikit-learn for machine learning applications. Also, Python has library-like tools to offer cross-platform support to the developers.
+
+                  <p>  pAside from these, other few libraries and frameworks are accessible in Python. Some of them are:</p>
+                  <ol>
+                    <li>SciPy and NumPy for scientific computing.</li><br>
+                    <li>Django for server-side Web development.</li><br>
+                    <li>BeautifulSoup for XML and HTML parsing.</li><br>
+                    <li>matplotlib for plotting graphical charts.</li><br>
+                </ol><br>
+            <li >Big Data, cloud computing, and Machine Learning</li><br>
+            <p>The use of cloud computing and big data in this enterprise world is one of the main reasons for the popularity of Python. Next to the R language for data science, Python is the most widely used tool. Hence, many data processing workloads in enterprises are powered by Python. Also, Python is mostly used for research and development due to its ease of analyzing and usable data organizing.</p>
+            <li >Versatile, Reliable, and Speed</li>
+            <p>If you ask any developer, they will heartily agree that Python Is reliable, efficient, and faster than other languages. Python language can be used in any kind of environment without facing any issue or loss. Also, it is versatile to use. Thus, you can use Python in various environments like web development, mobile applications, and much more. This makes it more attractive to use Python.</p>
+            <li >Has a Healthy, Active, and Supportive community</li>
+            <p>In general, the Programming language may lack documentation and developer support at some point. Python has neither of those issues. It has plenty of documentation, tutorials, and guides to learn. Additionally, the developer community is active. That is, if someone needs any help or support while using Python, they can get instant support from the supportive community. The active community will ensure you with the developers from the basic skill level to the expert.</p>
+            <li > Support from great Corporate Sponsors</li>
+            <p>Usually, programming languages will grow faster especially when it has a great corporate sponsor at its back. For instance, Visual Basic and C# by Microsoft, PHP by Facebook, and Java by Oracle and Sun. Likewise, Python Programming language is heavily sponsored by Amazon web services, Facebook, and specifically by Google. Back in 2006, Google adopted python and have used it for many applications and various platforms since then. Further, Google has created a dedicated portal for Python. This is an added benefit for Python and becomes more trending among the developers.</p>
+                
+            
+        </ol>   
+    <div id="imp">
+        <h2>Importance of Learning Python Programming</h2>
+            <p id="imp1">
+                We guess you might have a glimpse of why Python is so popular compared to other languages. Now, it’s time to know why you should learn Python and the importance of learning Python programming. Below are some reasons why you should learn Python.
+            </p>
+            <ol id="main">
+                <li>Versatile and multiple programming paradigms</li>
+                <p>Like other programming languages, Python supports multiple programming paradigms like object-oriented programming and structured programming. Also, the features of Python will support various concepts like aspect-oriented and functional programming. As well, Python features automatic memory management and a dynamic type system that help you for developing large and complex software applications. Furthermore, Python has an automatic memory management system to deal with dynamic storage for easy handling.</p>
+                <li> Fast growing with high demand</li>
+                <p>In recent days, Python is used across many corporate industries and applications. Also, the explosive use in machine learning, data science, and Artificial intelligence increased Python’s popularity in the developer community. Hence, due to the lighting speed growth, Python programming is in high demand for jobs.</p>
+                <li>Web testing framework</li>
+                <p>Python has many in-built testing frameworks that cover the fastest debugging workflow. Also, like Selenium and Splinter, Python has many modules and tools to make things much easier. Well, we all know testing is a tedious task. Python is a booster for testing. Because it supports testing for cross-browser and cross-platform with the testing frameworks like PyTest and Robot. So, if you are a tester, you should go for Python.</p>
+                <li>Simplify complex development</li>
+                <p>The main goal of Python is to provide simplicity to get rid of complexity. So, Python is quite easier to read, write, and learn than other programming languages. Hence, you can use the Python programming language for developing both web and desktop applications. Further, Python is designed with some special features to facilitate visualization and data analysis. So, you can take the benefit of data analysis to create big data solutions without any effort and extra time.</p>
+                <li> Easy Access</li>
+                <p>Well, do you wish to access databases easily? Python will do it for you. Python has two strong points that allow the user to customize interfaces like Oracle, MySQL, etc. This allows you to access other databases rapidly. Furthermore, its integration and flexibility will allow it to run with other programming languages like CPython, Jython, etc.</p>
+             </ol>
+   </div>
+   <div id="ad">
+       <h2>Advantages of Python</h2>
+       <p id="ad1">Whenever you learn a new language, you must be aware of the advantages of that language. This will help you to get better knowledge to use the language powerfully while building a robust application. Below we have listed the advantages of Python. Make sure to keep your eyes on them.</p>
+          <ol id="main1">
+              <li> High-level language</li> <br>
+              <p>Python looks more similar to the human-readable language than other programming languages. This gives the ability to code at a faster rate than other languages. Python can be extended to other programming languages. So, you can code in languages like C or C++.</p>
+            <li> Simple Syntax</li> <br>
+            <p>When compared to other programming languages. Python’s syntax is easy to learn. Both the programmers and non-programmers can begin programming right away.</p>
+            <li>Do more with less code</li> <br>
+            <p>As we mentioned previously, Python is easy to learn and write, you can do more with less coding. That is, you can construct a prototype and test out your ideas faster in Python. So, using Python, you can save valuable time.</p>
+            <li>User-friendly Data Structures</li> <br>
+            <p>Python is designed with an in-built dictionary data structure that can be used to build fast runtime. Further, Python doesn’t know the variable type, it automatically assigns the data type while executing the code. Hence, programmers need not worry about the variables and their data types.</p>
+            <li> Support libraries and third-party modules</li> <br>
+            <p>Python has a large standard library. It includes areas like string operations, internet protocols, and operating system interfaces. The standard library of Python will reduce the length of the code for writing significantly. Additionally, the Python package has numerous third-party modules. This makes Python more capable while interacting with other languages.</p>
+            <li>Object-Oriented Programming</li> <br>
+            <p>Python supports both procedural and object-oriented programming paradigms. Object-oriented programming allows you to build data structures that can be reused. This reduces the repetitive work. So, have you ever decided to switch your programming language from Python? If yes, you have a significant chance to work with object-oriented programming.</p>
+            <li>Productivity</li> <br>
+            <p>As Python has an object-oriented design, it offers enhanced process control, text processing, and integration. Also, the extensive library and language simplicity will render more productivity than other programming languages.</p>
+            </ol>
+   </div>
+
+</body>
+</html>
